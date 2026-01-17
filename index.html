@@ -1,114 +1,79 @@
+cat <<EOF > index.html
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galdino Fidalgo | Kwai Dramas</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Dramas Online - Galdino Fidalgo</title>
     <style>
-        :root {
-            --kwai-orange: #ff5000;
-            --kwai-dark: #222;
+        body {
+            background-color: #0f0f0f;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
         }
-        body { 
-            background-color: #f9f9f9; 
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        header {
+            background: linear-gradient(to bottom, #ff0050, #000);
+            padding: 40px 20px;
         }
-        .main-container {
-            max-width: 450px;
-            margin: 40px auto;
-            padding: 25px;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        .profile-img { 
-            width: 110px; 
-            height: 110px;
-            border-radius: 50%; 
-            border: 3px solid var(--kwai-orange);
-            padding: 3px;
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #fff;
             margin-bottom: 15px;
         }
-        .btn-kwai { 
-            background: linear-gradient(45deg, var(--kwai-orange), #ff7800);
-            color: white; 
-            border: none;
-            border-radius: 12px; 
-            font-weight: bold; 
-            font-size: 1.1rem;
+        h1 { margin: 10px 0; font-size: 24px; }
+        p { color: #ccc; font-size: 16px; padding: 0 20px; }
+        .container { padding: 20px; }
+        .video-card {
+            background: #1e1e1e;
+            border-radius: 10px;
             padding: 15px;
-            text-decoration: none;
-            display: block;
-            transition: 0.3s;
+            margin-bottom: 20px;
+            border-left: 5px solid #ff0050;
         }
-        .btn-kwai:hover {
+        .btn-kwai {
+            display: inline-block;
+            background-color: #ff0050;
             color: white;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(255, 80, 0, 0.3);
-        }
-        .btn-video {
-            background-color: white;
-            color: var(--kwai-dark);
-            border: 2px solid #eee;
-            border-radius: 12px;
-            padding: 12px;
+            padding: 12px 25px;
             text-decoration: none;
-            display: block;
-            font-weight: 500;
-            transition: 0.3s;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 20px;
         }
-        .btn-video:hover {
-            background-color: #f8f8f8;
-            border-color: var(--kwai-orange);
-        }
-        .section-title {
-            font-size: 0.9rem;
-            color: #888;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin: 20px 0 10px;
-        }
-        .pulse {
-            animation: pulse-animation 2s infinite;
-        }
-        @keyframes pulse-animation {
-            0% { box-shadow: 0 0 0 0px rgba(255, 80, 0, 0.4); }
-            70% { box-shadow: 0 0 0 10px rgba(255, 80, 0, 0); }
-            100% { box-shadow: 0 0 0 0px rgba(255, 80, 0, 0); }
-        }
+        footer { padding: 30px; color: #555; font-size: 12px; }
     </style>
 </head>
-<body class="text-center">
+<body>
 
-    <div class="main-container">
-        <img src="https://github.com/identicons/galdino.png" class="profile-img" alt="Galdino Fidalgo">
-        
-        <h1 class="h4 fw-bold mb-1">Galdino Fidalgo</h1>
-        <p class="text-muted small mb-4">@galdino_fidalg</p>
-        
-        <div class="d-grid gap-3">
-            <a href="https://k.kwai.com/u/@galdino_fidalg/XMCf9ulX" target="_blank" class="btn-kwai pulse">
-                ✅ SEGUIR NO KWAI
-            </a>
+    <header>
+        <img src="https://github.com/galdinofidalgo4-beep.png" alt="Perfil" class="profile-img">
+        <h1>@galdinofidalgo4-beep</h1>
+        <p>🎬 Os dramas mais emocionantes que você não encontra em nenhum outro lugar!</p>
+        <a href="https://www.kwai.com" target="_blank" class="btn-kwai">Me siga no Kwai</a>
+    </header>
 
-            <p class="section-title">Melhores Dramas 🎬</p>
-
-            <a href="https://k.kwai.com/p/rFtCIbCM" target="_blank" class="btn-video">
-                🎥 Clipes que valem a pena repetir
-            </a>
-
-            <a href="https://k.kwai.com/p/uIqLCKgn" target="_blank" class="btn-video">
-                📺 Assistir Drama em Alta
-            </a>
+    <div class="container">
+        <div class="video-card">
+            <h3>🎭 Drama em Destaque</h3>
+            <p>Assista aos episódios diários atualizados.</p>
         </div>
 
-        <p class="mt-4 small text-secondary">
-            Acompanhe conteúdos diários!<br>
-            <strong>kwai.galdinofidalgo.site</strong>
-        </p>
+        <div class="video-card">
+            <h3>⭐ Favoritos da Semana</h3>
+            <p>Os vídeos mais curtidos da minha rede social.</p>
+        </div>
     </div>
+
+    <footer>
+        &copy; 2024 Dramas Online - Todos os direitos reservados.
+    </footer>
 
 </body>
 </html>
+EOF
 
