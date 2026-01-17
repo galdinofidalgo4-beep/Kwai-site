@@ -6,72 +6,37 @@ cat <<EOF > index.html
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dramas Online - Galdino Fidalgo</title>
     <style>
-        body {
-            background-color: #0f0f0f;
-            color: white;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        header {
-            background: linear-gradient(to bottom, #ff0050, #000);
-            padding: 40px 20px;
-        }
-        .profile-img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            border: 3px solid #fff;
-            margin-bottom: 15px;
-        }
-        h1 { margin: 10px 0; font-size: 24px; }
-        p { color: #ccc; font-size: 16px; padding: 0 20px; }
+        body { background-color: #000; color: white; font-family: sans-serif; text-align: center; margin: 0; }
+        header { background: #ff0050; padding: 30px; }
+        .profile-img { width: 100px; border-radius: 50%; border: 3px solid white; }
         .container { padding: 20px; }
-        .video-card {
-            background: #1e1e1e;
-            border-radius: 10px;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-left: 5px solid #ff0050;
+        .btn { 
+            display: block; background: #222; color: white; 
+            padding: 15px; margin: 10px auto; border-radius: 10px; 
+            text-decoration: none; border: 1px solid #ff0050;
+            max-width: 300px; font-weight: bold;
         }
-        .btn-kwai {
-            display: inline-block;
-            background-color: #ff0050;
-            color: white;
-            padding: 12px 25px;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-        footer { padding: 30px; color: #555; font-size: 12px; }
+        .btn:hover { background: #ff0050; }
+        .video-box { background: #111; padding: 15px; border-radius: 10px; margin-top: 20px; }
     </style>
 </head>
 <body>
 
     <header>
-        <img src="https://github.com/galdinofidalgo4-beep.png" alt="Perfil" class="profile-img">
-        <h1>@galdinofidalgo4-beep</h1>
-        <p>🎬 Os dramas mais emocionantes que você não encontra em nenhum outro lugar!</p>
-        <a href="https://www.kwai.com" target="_blank" class="btn-kwai">Me siga no Kwai</a>
+        <img src="https://github.com/galdinofidalgo4-beep.png" class="profile-img">
+        <h1>Galdino Fidalgo</h1>
+        <p>🎬 Assista aos melhores dramas abaixo!</p>
     </header>
 
     <div class="container">
-        <div class="video-card">
-            <h3>🎭 Drama em Destaque</h3>
-            <p>Assista aos episódios diários atualizados.</p>
-        </div>
+        <a href="https://www.kwai.com/@galdinofidalgo" class="btn">🚀 ENTRAR NO MEU CANAL</a>
 
-        <div class="video-card">
-            <h3>⭐ Favoritos da Semana</h3>
-            <p>Os vídeos mais curtidos da minha rede social.</p>
+        <div class="video-box">
+            <h3>🎭 Drama Principal</h3>
+            <p>Clique abaixo para ver o vídeo de hoje:</p>
+            <a href="https://www.kwai.com" class="btn" style="background: #ff0050;">▶️ ASSISTIR VÍDEO</a>
         </div>
     </div>
-
-    <footer>
-        &copy; 2024 Dramas Online - Todos os direitos reservados.
-    </footer>
 
 </body>
 </html>
