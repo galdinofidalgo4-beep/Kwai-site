@@ -6,18 +6,28 @@ cat <<EOF > index.html
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dramas Online - Galdino Fidalgo</title>
     <style>
-        body { background-color: #000; color: white; font-family: sans-serif; text-align: center; margin: 0; }
-        header { background: #ff0050; padding: 30px; }
-        .profile-img { width: 100px; border-radius: 50%; border: 3px solid white; }
+        body { background-color: #000; color: white; font-family: sans-serif; text-align: center; margin: 0; padding: 0; }
+        header { background: linear-gradient(to bottom, #ff0050, #000); padding: 40px 20px; }
+        .profile-img { width: 110px; height: 110px; border-radius: 50%; border: 3px solid white; }
         .container { padding: 20px; }
-        .btn { 
-            display: block; background: #222; color: white; 
-            padding: 15px; margin: 10px auto; border-radius: 10px; 
-            text-decoration: none; border: 1px solid #ff0050;
-            max-width: 300px; font-weight: bold;
+        .video-card { 
+            background: #1a1a1a; 
+            border-radius: 15px; 
+            padding: 20px; 
+            margin: 15px auto; 
+            max-width: 350px;
+            border-bottom: 4px solid #ff0050;
         }
-        .btn:hover { background: #ff0050; }
-        .video-box { background: #111; padding: 15px; border-radius: 10px; margin-top: 20px; }
+        .btn-link { 
+            display: block; background: #ff0050; color: white; 
+            padding: 15px; margin-top: 15px; border-radius: 10px; 
+            text-decoration: none; font-weight: bold;
+        }
+        .btn-perfil {
+            display: inline-block; background: white; color: black;
+            padding: 10px 20px; margin-top: 20px; border-radius: 50px;
+            text-decoration: none; font-size: 14px; font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -25,17 +35,24 @@ cat <<EOF > index.html
     <header>
         <img src="https://github.com/galdinofidalgo4-beep.png" class="profile-img">
         <h1>Galdino Fidalgo</h1>
-        <p>🎬 Assista aos melhores dramas abaixo!</p>
+        <p>🎬 Os Melhores Dramas do Kwai</p>
+        <a href="https://k.kwai.com/u/@galdino_fidalg/aHdssgCS" class="btn-perfil">Ver Perfil Completo</a>
     </header>
 
     <div class="container">
-        <a href="https://www.kwai.com/@galdinofidalgo" class="btn">🚀 ENTRAR NO MEU CANAL</a>
-
-        <div class="video-box">
-            <h3>🎭 Drama Principal</h3>
-            <p>Clique abaixo para ver o vídeo de hoje:</p>
-            <a href="https://www.kwai.com" class="btn" style="background: #ff0050;">▶️ ASSISTIR VÍDEO</a>
+        
+        <div class="video-card">
+            <h3>🎭 Drama Imperdível</h3>
+            <p>Clipes que valem a pena assistir repetidamente!</p>
+            <a href="https://k.kwai.com/p/vCucgtSK" target="_blank" class="btn-link">▶️ ASSISTIR AGORA</a>
         </div>
+
+        <div class="video-card">
+            <h3>🎬 Drama do Dia</h3>
+            <p>Venha assistir a esse vídeo emocionante</p>
+            <a href="https://k.kwai.com/p/HguhlCDw" target="_blank" class="btn-link">▶️ ASSISTIR AGORA</a>
+        </div>
+
     </div>
 
 </body>
